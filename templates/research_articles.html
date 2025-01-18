@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Articles</title>
+</head>
+<body>
+    <h1>Research Articles</h1>
+    <div>
+        {% for article in articles %}
+        <div>
+            <h2>{{ article.title }}</h2>
+            <p><strong>Abstract:</strong> {{ article.abstract }}</p>
+            <p><strong>Authors:</strong> {{ article.authors }}</p>
+            <p><strong>Publication Date:</strong> {{ article.publication_date }}</p>
+            <p><a href="{{ article.article_url }}" target="_blank">Read Full Article</a></p>
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -34,21 +34,3 @@ if __name__ == '__main__':
 
 
 
-## the choice was made in the first place for organization, flexibility, and maintainability,
-#This starts both the Flask app and WebSocket server.
-#Necessary for real-time features like chat, live notifications, 
-# or room-based events.
-#The app will behave the same as when running app.py 
-# but with added WebSocket functionality.
-
-#I created main.py to handle specific requirements 
-# for running a SocketIO server alongside my regular 
-# Flask application.
-#It allows me to isolate the logic for handling 
-# WebSocket connections, real-time features, and 
-# the server configuration, while keeping app.py 
-# clean and focused on initializing the core Flask app and routes.
-# This separation provides more flexibility for managing 
-# services and makes it easier to scale or adjust 
-# specific parts of the application, such as 
-# real-time communication, without affecting the main application logic." 
